@@ -144,7 +144,7 @@ public:
 
 		while (exit == false)
 		{
-			printf("What would you like to do?\n1-Withdraw\n2-Deposit\n3-Transfer\n4-Print Report\n5-Change Users\n6-Exit\n7-Just Saying Hi\n");
+			printf("What would you like to do?\n1-Withdraw\n2-Deposit\n3-Transfer\n4-Print Report\n5-Change Users\n6-Exit\n7-Just Saying Hi\n8-Divest in corrupt bank\n");
 			scanf_s("%d", &select);
 			printf("------------------------------------------------\n");
 
@@ -207,6 +207,37 @@ public:
 			else if (select == 7)
 			{
 				printf("Howdy\n");
+			}
+			else if (select == 7)
+			{
+				int yn = 0;
+				printf("Are you sure?\n1-Yes\n2-No\n");
+				scanf_s("%d", &yn);
+				if (yn == 1)
+				{
+					printf("Are you sure you're sure?\n1-Yes\n2-No\n");
+					scanf_s("%d", &yn);
+					if (yn == 1)
+					{
+						printf("Are you sure you're sure you're sure?\n1-Yes\n2-No\n");
+						scanf_s("%d", &yn);
+						if (yn == 1)
+						{
+							printf("Ok then, have a nice life\n");
+							ProcessID();
+						}
+						else
+						{
+							break;
+						}
+
+					}
+					else
+						break;
+				}
+				
+				
+
 			}
 		}
 	}
